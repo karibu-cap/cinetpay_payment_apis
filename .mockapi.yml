@@ -4,7 +4,7 @@ dbDataPath: /
 apiRoutePrefix: /api/cinetpay
 routes:
   get:
-    -path: /transfer/check/money
+    - path: /transfer/check/money
   post:
     - path: /auth/login
       restrictedBody: true
