@@ -24,7 +24,7 @@ routes:
         followProp: notify_url
         timeoutInSecond: 120
         notificationMethod: POST
-        postDataPath: /transfer/money/send/contact/MP22122828061160596F8A461518
+        postDataPath: /notifications/cash_out
     - path: /payment
       restrictedBody: true
       bodyFields:
@@ -43,7 +43,7 @@ routes:
         followProp: notify_url
         timeoutInSecond: 120
         notificationMethod: POST
-        postDataPath: /transfer/money/send/contact/MP22122828061160596F8A461518
+        postDataPath: /notifications/cash_in
     - path: /payment/check
       restrictedBody: true
       bodyFields:
