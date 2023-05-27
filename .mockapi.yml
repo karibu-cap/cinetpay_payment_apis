@@ -4,6 +4,7 @@ dbDataPath: /
 apiRoutePrefix: /api/cinetpay
 routes:
   get:
+    -path: /transfer/check/money
   post:
     - path: /auth/login
       restrictedBody: true
@@ -13,8 +14,44 @@ routes:
     - path: /transfer/contact
       restrictedBody: true
       bodyFields:
-        prefix: true
-        phone: true
-        name: true
-        surname: true
-        email: true
+        data: true
+    - path: /transfer/money/send/contact
+      restrictedBody: true
+      bodyFields:
+        data: true
+        notify_url: true
+      scheduleNotification:
+        followProp: notify_url
+        timeoutInSecond: 120
+        notificationMethod: POST
+        postDataPath: /transfer/money/send/contact/MP22122828061160596F8A461518
+    - path: /payment
+      restrictedBody: true
+      bodyFields:
+        apikey: true,
+        site_id: true,
+        transaction_id: true,
+        amount: true,
+        currency: true,
+        description: true,
+        notify_url: true,
+        return_url: true,
+        channels: true,
+        lang: true,
+        metadata: true,
+      scheduleNotification:
+        followProp: notify_url
+        timeoutInSecond: 120
+        notificationMethod: POST
+        postDataPath: /transfer/money/send/contact/MP22122828061160596F8A461518
+    - path: /payment/check
+      restrictedBody: true
+      bodyFields:
+        apikey: true,
+        site_id: true,
+        transaction_id: true,
+
+
+
+
+      
