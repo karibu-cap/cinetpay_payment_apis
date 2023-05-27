@@ -44,12 +44,12 @@ routes:
         timeoutInSecond: 120
         notificationMethod: POST
         postDataPath: /notifications/cash_in
-    # - path: /payment/check
-    #   restrictedBody: true
-    #   bodyFields:
-    #     apikey: true,
-    #     site_id: true,
-    #     transaction_id: true,
+    - path: /payment/check
+      restrictedBody: true
+      bodyFields:
+        apikey: true,
+        site_id: true,
+        transaction_id: true,
 
 
 
