@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "login":{
+      "code": 0,
+      "message": "OPERATION_SUCCESS",
+      "data": {
+        "token": "HNDJFKLOLOD1226HBIDOFN561SJDDHFN@#JDJ12"
+      }
+    }
+  }
+}
