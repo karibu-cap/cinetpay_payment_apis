@@ -5,6 +5,7 @@ apiRoutePrefix: /api/cinetpay
 routes:
   get:
     - /transfer/check/money
+    - /transfer/check/money
   post:
     - path: /auth/login
       restrictedBody: true
