@@ -1,0 +1,15 @@
+version: 0.0.1
+dbFile: .mockapi.db.json
+dbDataPath: /
+apiRoutePrefix: /
+routes:
+  get:
+  post:
+    - path: /auth/login
+      restrictedBody: true
+      bodyFields:
+        apikey: true
+        password: true
+
+
+
