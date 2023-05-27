@@ -25,25 +25,25 @@ routes:
         timeoutInSecond: 120
         notificationMethod: POST
         postDataPath: /notifications/cash_out
-    # - path: /payment
-    #   restrictedBody: true
-    #   bodyFields:
-    #     apikey: true,
-    #     site_id: true,
-    #     transaction_id: true,
-    #     amount: true,
-    #     currency: true,
-    #     description: true,
-    #     notify_url: true,
-    #     return_url: true,
-    #     channels: true,
-    #     lang: true,
-    #     metadata: true,
-    #   scheduleNotification:
-    #     followProp: notify_url
-    #     timeoutInSecond: 120
-    #     notificationMethod: POST
-    #     postDataPath: /notifications/cash_in
+    - path: /payment
+      restrictedBody: true
+      bodyFields:
+        apikey: true,
+        site_id: true,
+        transaction_id: true,
+        amount: true,
+        currency: true,
+        description: true,
+        notify_url: true,
+        return_url: true,
+        channels: true,
+        lang: true,
+        metadata: true,
+      scheduleNotification:
+        followProp: notify_url
+        timeoutInSecond: 120
+        notificationMethod: POST
+        postDataPath: /notifications/cash_in
     # - path: /payment/check
     #   restrictedBody: true
     #   bodyFields:
