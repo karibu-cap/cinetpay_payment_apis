@@ -1,7 +1,7 @@
 version: 0.0.1
 dbFile: .mockapi.db.json
 dbDataPath: /
-apiRoutePrefix: /
+apiRoutePrefix: /api/cinetpay
 routes:
   get:
   post:
@@ -10,6 +10,11 @@ routes:
       bodyFields:
         apikey: true
         password: true
-
-
-
+    - path: /transfer/contact
+      restrictedBody: true
+      bodyFields:
+        prefix: true
+        phone: true
+        name: true
+        surname: true
+        email: true
