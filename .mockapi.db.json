@@ -7,5 +7,23 @@
         "token": "HNDJFKLOLOD1226HBIDOFN561SJDDHFN@#JDJ12"
       }
     }
+  },
+  "transfer": {
+    "contact":{
+      "code": 0,
+      "message": "OPERATION_SUCCESS",
+      "data": [
+        {
+          "prefix": "225",
+          "phone": "53798590",
+          "name": "Test A",
+          "surname": "Test B",
+          "email": "testa@exemple.com",
+          "code": 0,
+          "status": "success",
+          "lot": "0044557641201530021279"
+        }
+      ]
+    }
   }
 }
