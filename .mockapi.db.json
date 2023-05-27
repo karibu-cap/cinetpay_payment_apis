@@ -1,4 +1,32 @@
 {
+  "payment": {
+    "code": "201",
+    "message": "CREATED",
+    "description": "Transaction created with success",
+    "data": {
+      "payment_token":
+        "5df64dd9c5447739327eb88e1e4ea0ac015555cc262ea308c91acbd4e5c8fb95f4bd0bd7cad877a452f877fa6f51fe74184d00a84ab7f9",
+      "payment_url":
+        "https://checkout.cinetpay.com/payment/5df64dd9c5447739327eb88e1e4ea0ac015555cc262ea308c91acbd4e5c8fb95f4bd0bd7cad877a452f877fa6f51fe74184d00a84ab7f9"
+      },
+    "api_response_id": "1632143554.8513",
+    "check": {
+      "code": "00",
+      "message": "SUCCESS",
+      "data": {
+        "amount": "100",
+        "currency": "XOF",
+        "status": "ACCEPTED",
+        "payment_method": "OM",
+        "description": "Paiement abonnement",
+        "metadata": null,
+        "operator_id": "MP220915.2257.A76307",
+        "payment_date": "2022-09-15 22:57:15",
+        "fund_availability_date": "2022-09-17 00:00:00"
+      },
+      "api_response_id": "1663323067.7677"
+    }
+  },
   "auth": {
     "login":{
       "code": 0,
@@ -24,6 +52,56 @@
           "lot": "0044557641201530021279"
         }
       ]
+    },
+    "money": {
+      "send": {
+        "contact": {
+          "code": 0,
+          "message": "OPERATION_SUCCESS",
+          "data": [
+            [
+              {
+                "prefix": "225",
+                "phone": "0102324373",
+                "amount": 500,
+                "client_transaction_id": "TEST-ID1",
+                "notify_url":
+                  "https://webhook.site/a38f92c3-7304-4540-82af-db48f06d2000",
+                "payment_method": "WAVECI",
+                "code": 0,
+                "status": "success",
+                "treatment_status": "NEW",
+                "transaction_id": "EA211005.065802.Z794810",
+                "lot": "0069229938091633417082"
+              }
+            ]
+          ]
+        } 
+      }
+    },
+    "check": {
+      "money": {
+        "contact": {
+          "code": 0,
+          "message": "OPERATION_SUCCESS",
+          "data": [
+            {
+              "transaction_id": "EA180627.122753.M279245",
+              "client_transaction_id": "MYMERCHANTID1",
+              "lot": "0044557641201530102473",
+              "amount": "500",
+              "receiver": "07895086",
+              "receiver_e164": "+22507895086",
+              "operator": "OM",
+              "sending_status": "CONFIRM",
+              "transfer_valid": "Y",
+              "treatment_status": "VAL",
+              "comment": "Transfert effectué avec succès",
+              "validated_at": "2018-06-27 12:53:26"
+            }
+          ]
+        } 
+      }
     }
   }
 }
