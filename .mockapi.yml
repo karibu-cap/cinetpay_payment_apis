@@ -5,6 +5,7 @@ apiRoutePrefix: /api/cinetpay
 routes:
   get:
     - /transfer/check/money
+    - /finalizepayment
     - /finalizepayment/5df64dd9c5447739327eb88e1e4ea0ac015555cc262ea308c91acbd4e5c8fb95f4bd0bd7cad877a452f877fa6f51fe74184d00a84ab7f9
   post:
     - path: /auth/login
